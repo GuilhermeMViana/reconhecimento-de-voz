@@ -41,3 +41,23 @@ h3 {
     margin: 20px;
 }
 
+.reiniciar {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #388bac;
+}
+
+.reiniciar:hover {
+    background-color: #0884b4;
+    transition: 1s;
+    color: var(--primary-color);
+}

@@ -9,11 +9,11 @@ recognition.start();
 recognition.addEventListener('result', onSApeak);
 
 function onSApeak(e) {
-    console.log(e)
     
     ouvir = e.results[0][0].transcript;
 
     exibirChute(ouvir);
+    verficarChute(ouvir);
 }
 
 function exibirChute(ouvir) {
@@ -21,3 +21,5 @@ function exibirChute(ouvir) {
     `<div>Você disse:</div>
     <span class="box">${ouvir}</span>`
 }
+
+recognition.addEventListener('end', () => recognition.start())
